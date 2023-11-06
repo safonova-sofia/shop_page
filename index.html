@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Магазин</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+	<div class="content-wrapper">
+		<nav class="navigation-primary-container sticky">
+        <a href="../history.html"> <img src="../../media/SOULQUARIANS.svg" alt="SOULQUARIANS" class="logo"></a>
+        <ul>
+            <li><a href="../history.html">История</a></li>
+            <li><a href="#">Альбомы</a>
+                <ul>
+                    <li><a href="Mama's Gun.html">Mama's Gun</a></li>
+                    <li><a href="Things Fall Apart.html">Things Fall Apart</a></li>
+                    <li><a href="Like Water for Chocolate.html">Like Water for Chocolate</a></li>
+                    <li><a href="Voodoo.html">Voodoo</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#"><u>Магазин</u></a></li>
+            <li><a href="#">Другое</a></li>
+        </ul>
+    </nav>
+	<div class="components">
+		<div></div>
+	<header class="header-shop">
+		<div class="container ">
+			<div class="title-wrapper" style="text-align:center">
+                <h2 class="title--shop">Магазин</h2>
+            </div>
+
+		</div>
+	</header>
+
+	<div class="container mb-5">
+		<div class="row">
+
+			<!-- Товары -->
+			<div class="col-md-8">
+				<div class="row" id="products-container">
+
+				</div>
+			</div>
+
+			<!-- Корзина -->
+			<div class="col-md-4">
+
+				<!-- Корзина -->
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h5>
+
+							<div data-cart-empty class="alert alert-secondary alert-text" role="alert">
+							Корзина пуста
+						</div>
+
+						<!-- cart-wrapper -->
+						<div class="cart-wrapper">
+
+						</div>
+						<!-- // cart-wrapper -->
+
+						<!-- Стоимость заказа -->
+						<div class="cart-total">
+
+							<p><span class="h5 total-text">Итого:</span>
+								<span class="total-price ">0</span>
+								<span class="rouble ">₽</span></p>
+						</div>
+						<!-- // Стоимость заказа -->
+
+					</div>
+
+					<!-- Оформить заказ -->
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформить заказ</h5>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваш номер телефона">
+							</div>
+							<button type="submit" class="btn btn-primary">Заказать</button>
+						</form>
+					</div>
+					<!-- // Оформить заказ -->
+
+				</div>
+				<!-- // Корзина -->
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Подключаем скрипты -->
+
+	<script src="./js/renderProducts.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
+		</div>
+</div>
+</body>
+</html>
